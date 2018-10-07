@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<INavigateParam>
 
 @end
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor grayColor];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    SecondViewController *sVC = [[SecondViewController alloc]init];
+//    [self.navigationController pushViewController:sVC animated:YES];
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    param[@"message"] = @"顺传数据";
+    [self.navigationController navigateToWithPageName:NSStringFromClass([SecondViewController class]) withParam:param];
 }
 
 
@@ -25,5 +34,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)NavigateBack:(NSDictionary *)param withFromClassName:(Class)c {
+    
+}
+
+- (void)NavigateTo:(NSDictionary *)param withFromClassName:(Class)c {
+    
+}
 
 @end

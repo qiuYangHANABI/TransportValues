@@ -15,6 +15,10 @@
 		CE52C0652150D1A10076D2D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52C0642150D1A10076D2D3 /* main.m */; };
 		CE52C06F2150D1A10076D2D3 /* TransportValuesDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52C06E2150D1A10076D2D3 /* TransportValuesDemoTests.m */; };
 		CE52C07A2150D1A10076D2D3 /* TransportValuesDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52C0792150D1A10076D2D3 /* TransportValuesDemoUITests.m */; };
+		CE52C0892150D2C00076D2D3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52C0882150D2C00076D2D3 /* SecondViewController.m */; };
+		CE52C0972150E2350076D2D3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52C0962150E2350076D2D3 /* BaseViewController.m */; };
+		CE52C09A2150E9330076D2D3 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52C0992150E9330076D2D3 /* ThirdViewController.m */; };
+		CE52C09D2150F4350076D2D3 /* UINavigationController+TransportValues.m in Sources */ = {isa = PBXBuildFile; fileRef = CE52C09C2150F4350076D2D3 /* UINavigationController+TransportValues.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,15 @@
 		CE52C0752150D1A10076D2D3 /* TransportValuesDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportValuesDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE52C0792150D1A10076D2D3 /* TransportValuesDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransportValuesDemoUITests.m; sourceTree = "<group>"; };
 		CE52C07B2150D1A10076D2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE52C0872150D2BF0076D2D3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CE52C0882150D2C00076D2D3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CE52C08B2150D4F60076D2D3 /* INavigateParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INavigateParam.h; sourceTree = "<group>"; };
+		CE52C0952150E2350076D2D3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CE52C0962150E2350076D2D3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CE52C0982150E9330076D2D3 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		CE52C0992150E9330076D2D3 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		CE52C09B2150F4350076D2D3 /* UINavigationController+TransportValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TransportValues.h"; sourceTree = "<group>"; };
+		CE52C09C2150F4350076D2D3 /* UINavigationController+TransportValues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TransportValues.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +116,15 @@
 			children = (
 				CE52C0552150D19E0076D2D3 /* AppDelegate.h */,
 				CE52C0562150D19E0076D2D3 /* AppDelegate.m */,
+				CE52C0952150E2350076D2D3 /* BaseViewController.h */,
+				CE52C0962150E2350076D2D3 /* BaseViewController.m */,
 				CE52C0582150D19E0076D2D3 /* ViewController.h */,
 				CE52C0592150D19E0076D2D3 /* ViewController.m */,
+				CE52C0872150D2BF0076D2D3 /* SecondViewController.h */,
+				CE52C0882150D2C00076D2D3 /* SecondViewController.m */,
+				CE52C0982150E9330076D2D3 /* ThirdViewController.h */,
+				CE52C0992150E9330076D2D3 /* ThirdViewController.m */,
+				CE52C08A2150D4960076D2D3 /* NavigationCategory */,
 				CE52C05B2150D19E0076D2D3 /* Main.storyboard */,
 				CE52C05E2150D1A10076D2D3 /* Assets.xcassets */,
 				CE52C0602150D1A10076D2D3 /* LaunchScreen.storyboard */,
@@ -130,6 +150,16 @@
 				CE52C07B2150D1A10076D2D3 /* Info.plist */,
 			);
 			path = TransportValuesDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE52C08A2150D4960076D2D3 /* NavigationCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CE52C08B2150D4F60076D2D3 /* INavigateParam.h */,
+				CE52C09B2150F4350076D2D3 /* UINavigationController+TransportValues.h */,
+				CE52C09C2150F4350076D2D3 /* UINavigationController+TransportValues.m */,
+			);
+			path = NavigationCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE52C0892150D2C00076D2D3 /* SecondViewController.m in Sources */,
+				CE52C0972150E2350076D2D3 /* BaseViewController.m in Sources */,
 				CE52C05A2150D19E0076D2D3 /* ViewController.m in Sources */,
 				CE52C0652150D1A10076D2D3 /* main.m in Sources */,
+				CE52C09D2150F4350076D2D3 /* UINavigationController+TransportValues.m in Sources */,
 				CE52C0572150D19E0076D2D3 /* AppDelegate.m in Sources */,
+				CE52C09A2150E9330076D2D3 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

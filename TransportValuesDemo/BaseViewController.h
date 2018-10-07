@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  TransportValuesDemo
 //
 //  Created by 黃秋陽 on 2018/9/18.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "INavigateParam.h"
+#import "UINavigationController+TransportValues.h"
 
-@interface ViewController : BaseViewController
-
+@interface BaseViewController : UIViewController
 
 @end
-
